@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Play Quiz</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <script defer src="../../questions.js"></script>
+    <script defer src="play.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="../../index.html" class="navbar__brand">Quiz App</a>
+      <nav class="navbar__links">
+        <a href="play.html" class="active">Play</a>
+        <a href="../edit/edit.html">Edit</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <!-- START VIEW -->
+      <div id="start" class="card">Start Quiz!</div>
+
+      <!-- QUIZ VIEW -->
+      <div id="quiz" class="card" style="display: none">
+        <div id="question">Question placeholder</div>
+
+        <div id="choices">
+          <div class="choice" id="A" onclick="onPlayerSubmit('A')">Choice A</div>
+          <div class="choice" id="B" onclick="onPlayerSubmit('B')">Choice B</div>
+          <div class="choice" id="C" onclick="onPlayerSubmit('C')">Choice C</div>
+          <div class="choice" id="D" onclick="onPlayerSubmit('D')">Choice D</div>
+        </div>
+      </div>
+
+      <!-- SCORE VIEW -->
+      <div id="score" class="card" style="display: none">
+        <div id="scoreContainer"></div>
+      </div>
+    </main>
+  </body>
+</html>
+
+
